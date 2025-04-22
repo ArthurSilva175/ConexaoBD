@@ -4,13 +4,28 @@ using System.Data;
 using System.Xml.Linq;
 using MySql.Data.MySqlClient;
 
-namespace ConexaoBD
+namespace ConexaoTeste
 {
     class Conexao 
     {
         string dadosConexao = "server=localhost;user=root;database=teste_ti42;port=3306;passsword=";
 
-        public DataTable ExecutaSelect( string query )
+        public int ExecutaComando( string query )
+        {
+            // Cria e abre conexão com o banco
+            MySqlConnection conexao = new MySqlConnection(dadosConexao);
+            conexao.Open();
+
+            //Rodar o query dentro do banco
+            MySqlCommand comando = new MySqlCommand(query, conexao);
+            int linhasAfetadas = comando.ExecuteNonQuery();
+            conexao.Close();
+            return linhasAfetadas;
+
+        }
+
+
+        public DataTable ExecutaSelect(string query)
         {
             // Cria e abre conexão com o banco
             MySqlConnection conexao = new MySqlConnection(dadosConexao);
@@ -26,6 +41,6 @@ namespace ConexaoBD
 
         }
 
-        
-     }
+
+    }
 }

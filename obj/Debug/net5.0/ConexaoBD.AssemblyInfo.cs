@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConexaoBD")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29ea4c05daa3717ae5b8a62945f3a3826133ea24")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+032f1023e9eb5b9ac1cc59cf69f22f8d50347c76")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConexaoBD")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConexaoBD")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
